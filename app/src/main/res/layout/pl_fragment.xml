@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/playL"
+    android:background="@color/blue_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playButton"
+        android:src="@drawable/pause_icon"
+        android:paddingTop="20dp"
+        android:layout_above="@+id/songProgressBar"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prevButton"
+        android:layout_alignTop="@+id/playButton"
+        android:layout_toLeftOf="@+id/playButton"
+        android:layout_toStartOf="@+id/playButton"
+        android:src="@drawable/left_icon"
+        android:paddingTop="20dp"
+        android:clickable="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextButton"
+        android:layout_alignTop="@+id/playButton"
+        android:layout_toRightOf="@+id/playButton"
+        android:layout_toEndOf="@+id/playButton"
+        android:src="@drawable/right_icon"
+        android:paddingTop="20dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songDescriptionPlay"
+        android:layout_above="@+id/prevButton"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:minEms="11"
+        android:gravity="center"
+        android:background = "@android:drawable/dialog_holo_light_frame"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit ="marquee_forever"
+        />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="270dp"
+        android:id="@+id/songProgressBar"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/songLength"
+        android:layout_alignLeft="@+id/prevButton"
+        android:layout_alignStart="@+id/prevButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/albumImage"
+        android:layout_above="@+id/songDescriptionPlay"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cover_placeholder"
+        android:background="#f000"
+        android:padding="2dp"
+        android:layout_margin = "15dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0.00"
+        android:id="@+id/songProgressCounter"
+        android:layout_below="@+id/songProgressBar"
+        android:layout_alignLeft="@+id/songProgressBar"
+        android:layout_alignStart="@+id/songProgressBar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/songLength"
+        android:layout_above="@+id/shuffleButton"
+        android:layout_alignRight="@+id/songProgressBar"
+        android:layout_alignEnd="@+id/songProgressBar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shuffleButton"
+        android:src="@drawable/icon_shuffle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"/>
+
+</RelativeLayout>

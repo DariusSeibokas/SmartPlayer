@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartPlay</string>
+    <string name="action_settings">Settings</string>
+    <string name="prompt">Select Preferred Color Scheme</string>
+    <string name="min_length_prompt">Minimum Song Duration (Seconds):</string>
+    <string name="no_music">No Music Was Found</string>
+    <string name="refresh">Refresh Music Library</string>
+    <string name="del_on">Delete Mode Active</string>
+    <string name="del_off">Delete Mode Inactive</string>
+    <string name="retr">Chart Position: Retrieving...</string>
+
+    <string-array name="colour_schemes">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Gray</item>
+    </string-array>
+
+</resources>

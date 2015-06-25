@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/infoL"
+    android:background="@color/blue_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/albumImageDesc"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cover_placeholder"
+        android:background="#f000"
+        android:padding="2dp"
+        android:layout_margin = "15dp"
+        android:scaleType="centerInside"
+        android:layout_above="@+id/songTitleDesc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songTitleDesc"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_above="@+id/songArtistDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songArtistDesc"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_above="@+id/songAlbumDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songAlbumDesc"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_above="@+id/songDurationDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songDurationDesc"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_above="@+id/songYearDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songYearDesc"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_above="@+id/songGenreDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songGenreDesc"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_above="@+id/songPopularity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/songPopularity"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_above="@+id/songBitrateDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:id="@+id/songBitrateDesc"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="65dp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:stepSize="1" />
+
+</RelativeLayout>

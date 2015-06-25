@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "app.shevyakov.smartplay"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/jaudiotagger-2.2.3.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/jaudiotagger-2.2.3-javadoc.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/myid3.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/Regex.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/jakarta-regexp-1.5.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/MyID3_for_Android.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/commons-lang3-3.3.2.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/listviewanimations_lib-core-slh_3.1.0.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/listviewanimations_lib-core_3.1.0.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/listviewanimations_lib-manipulation_3.1.0.jar')
+    compile files('C:/Users/Kebab/AndroidStudioProjects/SmartPlay/libs/nineoldandroids-2.4.0.jar')
+}
+
+
+

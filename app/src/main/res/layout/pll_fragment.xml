@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/playlistL"
+    android:background="@color/blue_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songSearch"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.8">
+    <com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:textSize="18sp"
+        android:dividerHeight="1dp"
+        android:divider="@color/list_blue_divider"
+        />
+    </RelativeLayout>
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleDelete"
+        android:textOff="@string/del_off"
+        android:textOn="@string/del_on"
+        android:layout_weight="0.1"/>
+
+
+</LinearLayout>

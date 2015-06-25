@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="list_blue_divider" type="color">#458b74</item>
+    <item name="list_green_divider" type="color">#333300</item>
+
+    <item name="blue_bg" type="color">#FFa2c5b9</item>
+    <item name="green_bg" type="color">#339966</item>
+    <item name="gray_bg" type="color">#D4D4D4</item>
+    <item name="black_bg" type="color">#000</item>
+
+</resources>
